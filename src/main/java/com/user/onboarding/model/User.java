@@ -7,10 +7,13 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-@Document("users")
+@Document("currentUsers")
 public class User {
     @Id
     private String id;
-    private String name;
+    private String firstName;
+    private String secondName;
     private String email;
+    private String password;
+    private String gender;
 }
